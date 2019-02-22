@@ -1,0 +1,55 @@
+{
+	"info": {
+		"_postman_id": "10b91ede-aa7f-49bd-ac28-cfca716177e0",
+		"name": "test faceapi group",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/api/open/member/face/find",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "faceImg",
+							"type": "file",
+							"src": ""
+						},
+						{
+							"key": "email",
+							"value": "wingki@lycos.co.kr",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/open/member/face/find",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"open",
+						"member",
+						"face",
+						"find"
+					],
+					"query": [
+						{
+							"key": "img",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

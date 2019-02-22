@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    url: jdbc:mariadb://localhost:3306/jpa_sample
+    username: jpa_sample
+    password: 1111
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+logging:
+  level:
+    org.hibernate.sql: debug
+
+aws:
+  credentials:
+    accessKey: 접근키
+    secretKey: 비밀키
+  s3:
+    bucket: 테스트할 버킷명
+    domain: 도메인 3
